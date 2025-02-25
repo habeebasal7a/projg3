@@ -1,0 +1,724 @@
+<html>
+    <head>
+        <title>
+            Site H
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-md  fixed-top" style="background-color:#071931e0; opacity: 0.95; height: 80px;">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand d-flex align-items-center" style="background: -webkit-linear-gradient(90deg, #001aff, #ff4500); font-size: 22px; font-weight: bolder; text-transform: uppercase; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; transition: 0.4s;">
+                    <img src="images/7883511.jpg" class="rounded-circle shadow me-2" alt="logo" height="50px" width="50px">
+                    <span class="fw-bold text-warning">MOBILE STORE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" style="color: #f8f9fa; transition: 0.3s;" onmouseover="this.style.textShadow='1px 1px 10px rgba(255, 140, 0, 0.7), -1px -1px 10px rgba(255, 69, 0, 0.7)'" onmouseout="this.style.textShadow='none'">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #f8f9fa; transition: 0.3s;" onmouseover="this.style.textShadow='1px 1px 10px rgba(255, 140, 0, 0.7), -1px -1px 10px rgba(255, 69, 0, 0.7)'" onmouseout="this.style.textShadow='none'">
+                                Phones
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle border-info rounded-3" href="#" id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">
+                                Offers
+                            </a>
+                            <ul class="dropdown-menu mt-3 fade" aria-labelledby="nav-Dropdown">
+                                <li><a class="dropdown-item" href="#" style="text-shadow: 1px 1px 0px rgba(165, 46, 16, 0.8);">Samsung</a></li>
+                                <li><a class="dropdown-item" href="#" style="text-shadow: 1px 1px 0px rgba(165, 46, 16, 0.8);">iPhone</a></li>
+                                <li><hr class="dropdown-divider bg-info"></li>
+                                <li><a class="dropdown-item" href="#" style="text-shadow: 1px 1px 0px rgba(165, 46, 16, 0.8);">Xiaomi</a></li>
+                                <li><a class="dropdown-item" href="#" style="text-shadow: 1px 1px 0px rgba(165, 46, 16, 0.8);">Oppo</a></li>
+                                <li><a class="dropdown-item" href="#" style="text-shadow: 1px 1px 0px rgba(165, 46, 16, 0.8);">vivo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #f8f9fa; transition: 0.3s;" onmouseover="this.style.textShadow='1px 1px 10px rgba(255, 140, 0, 0.7), -1px -1px 10px rgba(255, 69, 0, 0.7)'" onmouseout="this.style.textShadow='none'">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <form class=" form1  d-flex align-items-center me-auto">
+                      <input class="form-control m-2 border-3 rounded-3" type="search" placeholder="Search for a phone">
+                      <button class="btn btn-warning me-2 shadow-lg" type="submit" style="background-color: #c5ada3; color: #fff; border: 3px solid #7b79cc; border-radius: 10px; transition: 0.3s; height: 50px;">
+                          <i class="fas fa-search"></i> Search
+                      </button>
+                      <button class="btn btn-outline-light me-2 shadow-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border-radius: 10px; transition: 0.3s;">
+                          <i class="fas fa-sign-in-alt"></i> Login
+                      </button>
+                      <button class="btn btn-success shadow-lg" type="button" style="border-radius: 10px; transition: 0.3s;">
+                          <i class="fas fa-shopping-cart"></i> Cart
+                      </button>
+                  </form>
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="background-color: #002147; color: white;">
+            <div class="modal-header" style="background-color: #335888; border-bottom: 2px solid #ff4d07;">
+              <h5 class="modal-title text-warning shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+              <button type="button" class="btn btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="m-3">
+                  <label class="form-label text-warning">Email Address</label>
+                  <input type="email" class="form-control border-3 border-warning rounded-2">
+                </div>
+                <div class="m-3">
+                  <label class="form-label text-warning">Password</label>
+                  <input type="password" class="form-control border-3 border-warning rounded-2">
+                </div>
+                <div class="m-3 form-check">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input bg-warning" type="checkbox" role="switch" checked>
+                    <label class="form-check-label text-warning">Remember Me</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer" style="border-top: 2px solid #3d07ff;">
+              <button type="submit" class="btn btn-warning">Login</button>
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+          </main>
+         <aside>
+    <div class="container-fluid p-0" style="position: relative;">
+        <div class="d-flex flex-column justify-content-between ms-auto" style="position: fixed; z-index: 90; top: 200px; right: 20px;">
+            <div class="aside-icon" style="width: 80px; height: 80px;">
+                <a href="#">
+                    <i class="fab fa-facebook-square" style="text-align: center; font-size: 60px; line-height: 80px;"></i>
+                </a>
+            </div>
+            <div class="aside-icon" style="width: 80px; height: 80px;">
+                <a href="#">
+                    <i class="fab fa-whatsapp-square" style="text-align: center; font-size: 60px; line-height: 80px;"></i>
+                </a>
+            </div>
+            <div class="aside-icon" style="width: 80px; height: 80px;">
+                <a href="#">
+                    <i class="fab fa-twitter-square" style="text-align: center; font-size: 60px; line-height: 80px;"></i>
+                </a>
+            </div>
+            <div class="aside-icon" style="width: 80px; height: 80px;">
+                <a href="#">
+                    <i class="fab fa-linkedin" style="text-align: center; font-size: 60px; line-height: 80px;"></i>
+                </a>
+            </div>
+            <div class="aside-icon" style="width: 80px; height: 80px;">
+                <a href="#">
+                    <i class="fab fa-instagram-square" style="text-align: center; font-size: 60px; line-height: 80px;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+      
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+      
+          <!-- The slideshow/carousel -->
+<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/iphone.jpg" alt="iPhone" class="d-block w-100" style="height: 550px;">
+      <div class="carousel-caption">
+        <h1>iPhone Collection</h1>
+        <p>Discover the latest iPhones with cutting-edge technology.</p>
+        <a href="#" class="btn btn-warning text-dark text-shadow" target="_blank">Shop Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/samsung.jpg" alt="Samsung" class="d-block w-100" style="height: 550px;">
+      <div class="carousel-caption">
+        <h1>Samsung Galaxy Series</h1>
+        <p>Experience innovation and power in every Samsung device.</p>
+        <a href="#" class="btn btn-warning text-dark text-shadow" target="_blank">Explore Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Xiaomi.jpg" alt="Xiaomi" class="d-block w-100" style="height: 550px;">
+      <div class="carousel-caption">
+        <h1>Xiaomi Smartphones</h1>
+        <p>High performance at unbeatable prices.</p>
+        <a href="#" class="btn btn-warning text-dark text-shadow" target="_blank">View Deals</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/oppo-and-vivo.jpg" alt="Oppo" class="d-block w-100" style="height: 550px;">
+      <div class="carousel-caption">
+        <h1>Oppo & Vivo</h1>
+        <p>Smartphones designed for creativity and performance.</p>
+        <a href="#" class="btn btn-warning text-dark text-shadow" target="_blank">Check Offers</a>
+      </div>
+    </div>
+  </div>
+  
+      
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- /carousel -->
+          </main>
+          <!-- basic card -->
+          <section class="cards">
+            <div class="card p-3 text-white shadow-lg"
+                style="border-top-left-radius: 0; border-top-right-radius:0; background-color: #002147;">
+                <div class="card-body">
+                    <h2 class="card-title title">Welcome to Mobile Store</h2>
+                    <p class="card-text">
+                        Looking for the latest smartphones? We offer top brands like Apple, Samsung, Xiaomi, and more.
+                        From flagship devices to budget-friendly options, find the perfect phone for you. 
+                        Enjoy exclusive deals, fast shipping, and 24/7 customer support.
+                    </p>
+                    <a href="#" class="btn btn-warning text-dark btn-lg m-auto">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        
+            <!-- /card -->
+            <hr>
+         <!-- collapse Accordion-->
+<div class="mx-auto my-3 p-5 text-light text-center text-shadow rounded-3 shadow-lg" style="background-color: #002147;">
+  <h1>Popular Smartphones</h1>
+</div>
+<div class="accordion" id="accordioncollapse">
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="head1">
+          <button class="accordion-button collapsed btn-outline-warning title shadow-lg" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+              aria-controls="collapseOne" style="font-size: 20px; color: #001f3f;">
+              iPhone 15 Pro Max
+          </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="head1"
+          data-bs-parent="#accordioncollapse">
+          <div class="accordion-body border-warning text-secondary">
+              Experience the ultimate performance with the A17 Bionic chip, a stunning titanium design, and the powerful 48MP camera.
+          </div>
+      </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="head2">
+          <button class="accordion-button collapsed btn-outline-warning title shadow-lg" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+              aria-controls="collapseTwo" style="font-size: 20px; color: #001f3f;">
+              Samsung Galaxy S24 Ultra
+          </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="head2"
+          data-bs-parent="#accordioncollapse">
+          <div class="accordion-body border-warning text-secondary">
+              The Samsung Galaxy S24 Ultra brings you a Dynamic AMOLED 2X display, a 200MP camera, and the powerful Snapdragon 8 Gen 3.
+          </div>
+      </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="head3">
+          <button class="accordion-button collapsed btn-outline-warning title shadow-lg" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree" style="font-size: 20px; color: #001f3f;">
+              Google Pixel 8 Pro
+          </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="head3"
+          data-bs-parent="#accordioncollapse">
+          <div class="accordion-body border-warning text-secondary">
+              Get the best AI-powered photography and a clean Android experience with the Google Pixel 8 Pro, featuring Tensor G3 chip.
+          </div>
+      </div>
+  </div>
+</div>
+
+      
+        
+      
+                <!-- /collapse -->
+                <hr>
+                <!-- Header Section -->
+                <div class="mx-auto mt-3 p-2 text-light text-center text-shadow rounded-3 shadow-lg" style="background-color: #002147;">
+                    <h1>Translate From Arabic To English</h1>
+                </div>
+                
+                <!-- Card 1 -->
+                <div class="card p-3 text-white shadow-lg" style="border-radius: 0; background-color:#5e6775fb;">
+                    <div class="card-body">
+                        <h4 class="card-title">Write and Translate 
+                            <a href="https://translate.google.com.eg/?hl=en" target="_blank" rel="noopener" class="text-light">Press Here</a>
+                        </h4>
+                        <button class="btn btn-light text-dark border border-2 shadow-lg" onclick="copyToClipboard('sentence1')" style="font-size: 18px;">
+                            Copy
+                        </button>
+                        <br>
+                        <textarea id="sentence1" class="form-control mx-auto mt-3" rows="5" placeholder="Translate..."></textarea>
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="mx-auto mt-3 p-2 text-light text-center text-shadow rounded-3 shadow-lg" style="background-color: #002147;">
+                    <h1>Translate From Arabic To French</h1>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card p-3 text-white shadow-lg" style="border-radius: 0; background-color: #5e6775fb;">
+                    <div class="card-body">
+                        <h4 class="card-title">Write and Translate 
+                            <a href="https://translate.google.com.eg/?hl=en&sl=ar&tl=fr&op=translate" target="_blank" rel="noopener" class="text-light">Press Here</a>
+                        </h4>
+                        <button class="btn btn-light text-dark border border-2 shadow-lg" onclick="copyToClipboard('sentence2')" style="font-size: 18px;">
+                            Copy
+                        </button>
+                        <br>
+                        <textarea id="sentence2" class="form-control mx-auto mt-3" rows="5" placeholder="Translate..."></textarea>
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="mx-auto mt-3 p-2 text-light text-center text-shadow rounded-3 shadow-lg" style="background-color: #002147;">
+                    <h1>Translate From Arabic To German</h1>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card p-3 text-white shadow-lg" style="border-radius: 0; background-color: #5e6775fb;">
+                    <div class="card-body">
+                        <h4 class="card-title">Write and Translate 
+                            <a href="https://translate.google.com.eg/?hl=en&sl=ar&tl=de&op=translate" target="_blank" rel="noopener" class="text-light">Press Here</a>
+                        </h4>
+                        <button class="btn btn-light text-dark border border-2 shadow-lg" onclick="copyToClipboard('sentence3')" style="font-size: 18px;">
+                            Copy
+                        </button>
+                        <br>
+                        <textarea id="sentence3" class="form-control mx-auto mt-3" rows="5" placeholder="Translate..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- /card3 -->
+      
+          </section>
+           <!-- /cards -->
+          <hr class="my-4">
+          <div class="fixed-img fixed-image1"></div>
+        
+          <hr>
+<!-- Header Section -->
+<div class="mx-auto mt-3 p-2 text-light text-center text-shadow rounded-3 shadow-lg" style="background-color: #002147;">
+    <h1>Popular Smartphones</h1>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-around pb-5">
+        <!-- iPhone 15 Pro Max -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/iphone_16.png" class="card-img-top shadow w-100" alt="iPhone 15 Pro Max">
+            <div class="card-body">
+                <h5 class="card-title">iPhone 16 </h5>
+                <p class="card-text">Experience the ultimate performance with titanium design.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- Samsung Galaxy S24 Ultra -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/samsung-s24.jpeg" class="card-img-top shadow" alt="Samsung Galaxy S24 Ultra">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy S24 Ultra</h5>
+                <p class="card-text">Powerful Snapdragon 8 Gen 3 with a 200MP camera.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- Google Pixel 8 Pro -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/google-pixel-8-pro-1700127803.jpg" class="card-img-top shadow" alt="Google Pixel 8 Pro">
+            <div class="card-body">
+                <h5 class="card-title">Google Pixel 8 Pro</h5>
+                <p class="card-text">AI-powered photography and pure Android experience.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- Xiaomi 14 Pro -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Xiaomi 14 Pro.jpg" class="card-img-top shadow" alt="Xiaomi 14 Pro">
+            <div class="card-body">
+                <h5 class="card-title">Xiaomi 14 Pro</h5>
+                <p class="card-text">High-end performance with HyperOS and Leica camera.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- Oppo Find X6 Pro -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Oppo Find X6 Pro.png" class="card-img-top shadow" alt="Oppo Find X6 Pro">
+            <div class="card-body">
+                <h5 class="card-title">Oppo Find X6 Pro</h5>
+                <p class="card-text">Premium design with Hasselblad-tuned camera.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- OnePlus 12 -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/OnePlus 12.jpg" class="card-img-top shadow" alt="OnePlus 12">
+            <div class="card-body">
+                <h5 class="card-title">OnePlus 12</h5>
+                <p class="card-text">Fastest charging and a 120Hz LTPO AMOLED display.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- Vivo X100 Pro -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Vivo X100 Pro.jpg" class="card-img-top shadow" alt="Vivo X100 Pro">
+            <div class="card-body">
+                <h5 class="card-title">Vivo X100 Pro</h5>
+                <p class="card-text">Professional photography with Zeiss optics.</p>
+                
+                <button class="btn btnm btn-warning text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+        <!-- Asus ROG Phone 8 -->
+        <div class="card cardover bg-light text-dark col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Asus ROG Phone 8.jpg" class="card-img-top shadow" alt="Asus ROG Phone 8">
+            <div class="card-body">
+                <h5 class="card-title">Asus ROG Phone 8</h5>
+                <p class="card-text">Ultimate gaming experience with high refresh rate display.</p>
+                
+                <button class="btn btn-warning btnm text-dark mx-auto d-block">Know More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+          
+      
+          <div class="fixed-img fixed-image2"></div>
+          <hr class="my-4">
+          <!-- شكر -->
+          <!-- thanks card-->
+          <div class="card p-3 text-white shadow-lg" style="background-color: rgb(158, 217, 219);">
+            <h2 class="text-center text-light m-3 title" style="font-size: 40px;">Special Thanks</h2>
+        </div>
+        
+        <section class="wrapper">
+            <div class="container" style="width: 100%; min-height: 500px;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card card-hover text-white card-has-bg click-col thankcard"
+                            style="background-image:url('images/engahmed.jpg');">
+                            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?mobile,technology"
+                                alt="Special Thanks">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0 "><a class="text-white" href="#">Thank You for Your Support</a></h4>
+                                    <small><i class="far fa-clock"></i> February 2025</small>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="media">
+                                        <img class="mr-3 rounded-circle" src="images/engahmed.jpg" alt="Team Member"
+                                            style="width:100px">
+                                        <div class="media-body">
+                                            <h6 class="my-0 text-white d-block">Eng. Ahmed</h6>
+                                            <small>Head of Mobile Sales</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card card-hover text-white card-has-bg click-col thankcard"
+                            style="background-image:url('images/enghabeba.jpg');">
+                            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?smartphone,ecommerce"
+                                alt="Special Thanks">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0 "><a class="text-white" href="#">Thank You for Your Dedication</a></h4>
+                                    <small><i class="far fa-clock"></i> February 2025</small>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="media">
+                                        <img class="mr-3 rounded-circle" src="images/enghabeba.jpg" alt="Team Member"
+                                            style="width:100px">
+                                        <div class="media-body">
+                                            <h6 class="my-0 text-white d-block">Eng.Habeeba</h6>
+                                            <small>Senior Mobile Marketing Expert</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4 card3">
+                        <div class="card card-hover text-white card-has-bg click-col thankcard"
+                            style="background-image:url('images/engomar.jpg');">
+                            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?phone,shopping"
+                                alt="Special Thanks">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <h4 class="card-title mt-0 "><a class="text-white" href="#">Grateful for Your Efforts</a></h4>
+                                    <small><i class="far fa-clock"></i> February 2025</small>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="media">
+                                        <img class="mr-3 rounded-circle" src="images/engomar.jpg" alt="Team Member"
+                                            style="width:100px">
+                                        <div class="media-body">
+                                            <h6 class="my-0 text-white d-block">Eng.Omar </h6>
+                                            <small>Mobile Store Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+  
+        <hr class="my-4">
+        <section class="container light"> <!-- Mobile Offers Section -->
+          <div class="container py-2">
+            <div class="h1 text-center title" id="pageHeaderTitle" style="font-size: 30px;">Latest Mobile Offers</div>
+        
+            <article class="postcard d-flex light blue"> <!-- 1st card -->
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="images/samsung-s23.jpeg" alt="Samsung Galaxy S23" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title blue"><a href="#">Samsung Galaxy S23</a></h1>
+                <div class="postcard__subtitle small">
+                  <i class="fas fa-tag mr-2"></i>Price: 28,500 EGP
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  The most powerful Samsung phone with Snapdragon 8 Gen 2 processor and a 50MP camera! Available now at the best price.
+                </div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-mobile mr-2"></i>128GB/8GB RAM</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>In Stock</li>
+                  <li class="tag__item play blue">
+                    <a href="#"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</a>
+                  </li>
+                </ul>
+              </div>
+            </article> <!-- /1st card -->
+        
+            <article class="postcard d-flex light red"> <!-- 2nd card -->
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="images/iphone14.jpg" alt="iPhone 14 Pro" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title red"><a href="#">iPhone 14 Pro</a></h1>
+                <div class="postcard__subtitle small">
+                  <i class="fas fa-tag mr-2"></i>Price: 38,900 EGP
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  Experience the ultimate performance with the A16 Bionic chip and a stunning 48MP camera. Available in all colors!
+                </div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-mobile mr-2"></i>256GB/6GB RAM</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>In Stock</li>
+                  <li class="tag__item play red">
+                    <a href="#"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</a>
+                  </li>
+                </ul>
+              </div>
+            </article> <!-- /2nd card -->
+        
+            <article class="postcard d-flex light green"> <!-- 3rd card -->
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="images/Xiaomi 13 Pro.png" alt="Xiaomi 13 Pro" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green"><a href="#">Xiaomi 13 Pro</a></h1>
+                <div class="postcard__subtitle small">
+                  <i class="fas fa-tag mr-2"></i>Price: 22,750 EGP
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  A flagship experience with a 1-inch Sony IMX989 sensor, Snapdragon 8 Gen 2, and a 120Hz AMOLED display.
+                </div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-mobile mr-2"></i>256GB/12GB RAM</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>In Stock</li>
+                  <li class="tag__item play green">
+                    <a href="#"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</a>
+                  </li>
+                </ul>
+              </div>
+            </article> <!-- /3rd card -->
+        
+            <article class="postcard d-flex light yellow"> <!-- 4th card -->
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="images/Oppo Find X5.png" alt="Oppo Find X5" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title yellow"><a href="#">Oppo Find X5</a></h1>
+                <div class="postcard__subtitle small">
+                  <i class="fas fa-tag mr-2"></i>Price: 18,300 EGP
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  Stunning design, Hasselblad-tuned cameras, and a powerful Dimensity 9000 processor for a flagship experience.
+                </div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-mobile mr-2"></i>256GB/8GB RAM</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>In Stock</li>
+                  <li class="tag__item play yellow">
+                    <a href="#"><i class="fas fa-shopping-cart mr-2"></i>Buy Now</a>
+                  </li>
+                </ul>
+              </div>
+            </article> <!-- /4th card -->
+        
+          </div> <!-- /container -->
+        </section> <!-- /Mobile Offers Section -->
+        
+         <!-- Join Us Section -->
+         <h2 class="text-center title mb-4" style="font-size: 30px; color: #567592;">Follow Us & Stay Updated</h2>
+
+
+         <div class="container">
+           <div class="row justify-content-center">
+         
+             <!-- Facebook -->
+             <div class="card m-3 bg-light shadow-lg" style="width: 250px;">
+               <div class="card-body text-center">
+                 <h4 class="card-title mb-3">Like Our Page</h4>
+                 <i class="fab fa-facebook fa-3x text-primary mb-3"></i>
+                 <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary">Visit Facebook</a>
+               </div>
+             </div>
+         
+             <!-- WhatsApp -->
+             <div class="card m-3 bg-light shadow-lg" style="width: 250px;">
+               <div class="card-body text-center">
+                 <h4 class="card-title mb-3">Chat with Us</h4>
+                 <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+                 <a href="https://wa.me/your-number" target="_blank" class="btn btn-outline-success">WhatsApp Chat</a>
+               </div>
+             </div>
+         
+             <!-- Instagram -->
+             <div class="card m-3 bg-light shadow-lg" style="width: 250px;">
+               <div class="card-body text-center">
+                 <h4 class="card-title mb-3">Follow Instagram</h4>
+                 <i class="fab fa-instagram fa-3x text-danger mb-3"></i>
+                 <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger">Instagram Page</a>
+               </div>
+             </div>
+         
+             <!-- YouTube -->
+             <div class="card m-3 bg-light shadow-lg" style="width: 250px;">
+               <div class="card-body text-center">
+                 <h4 class="card-title mb-3">Watch Reviews</h4>
+                 <i class="fab fa-youtube fa-3x text-danger mb-3"></i>
+                 <a href="https://www.youtube.com" target="_blank" class="btn btn-outline-danger">Watch Videos</a>
+               </div>
+             </div>
+         
+           </div>
+         </div>
+         
+          <!-- Footer Section -->
+<footer class="text-light bg-dark pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center">
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h5><i class="fas fa-mobile-alt"></i> Contact Us</h5>
+        <hr class="border-top border-light my-3">
+        <p><i class="fas fa-phone"></i> Tel: 000-000-000</p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: Egypt</p>
+        <p><i class="fas fa-fax"></i> Fax: 000-000-000</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5><i class="fas fa-link"></i> Quick Links</h5>
+        <hr class="border-top border-light my-3">
+        <p><a href="#" class="text-light"><i class="fas fa-shopping-cart"></i> Shop Now</a></p>
+        <p><a href="#" class="text-light"><i class="fas fa-tags"></i> Latest Offers</a></p>
+        <p><a href="#" class="text-light"><i class="fas fa-headset"></i> Customer Support</a></p>
+      </div>
+
+      <!-- Our Vision -->
+      <div class="col-md-4">
+        <h5><i class="fas fa-bullseye"></i> Our Vision</h5>
+        <hr class="border-top border-light my-3">
+        <p>Providing the best mobile shopping experience.</p>
+        <p>Ensuring top-quality service & customer satisfaction.</p>
+        <p>Stay connected with the latest tech trends.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="border-top border-light my-3">
+  <p class="text-center">Copyright &copy; 2024  Mobile Store. All rights reserved.</p>
+</footer>
+
+ <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>  
+    
+
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        <script type-text="javascript">
+          function copyToClipboard(id) {
+                  var from = document.getElementById(id);
+                  var range = document.createRange();
+                  window.getSelection().removeAllRanges();
+                  range.selectNode(from);
+                  window.getSelection().addRange(range);
+                  document.execCommand('copy');
+                  window.getSelection().removeAllRanges();
+                  window.alert("تم نسخ النص.");
+           }
+          </script> 
+    </body>
+</html>
